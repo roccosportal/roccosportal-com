@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>bootstrap-pagination-plugin</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+<div class="container">
+  <div class="row">
+    <div class="page-header">
+      <h1>bootstrap-pagination-plugin<img class="pull-right" src="/img/roccosportal-logo-tiny.png" alt="" /></h1>
+    </div>
+    <div class="span12">
+      Have a look at the <a href="https://github.com/roccosportal/bootstrap-pagination-plugin/wiki/Getting-Started">wiki</a>.
+      The source code is located on <a href="https://github.com/roccosportal/bootstrap-pagination-plugin/">Github</a>. .
+    </div>
+
+    
+    <div class="span12" id="example1">
+	 		<h3>Example 1</h3>
+      <p>
+          Shows a very basic example.
+      </p>
+ 			<div class="example1-page">
+ 				<p>Page 1</p>
+ 			</div>
+ 			<div class="example1-page" style="display:none">
+ 				<p>Page 2</p>
+ 			</div>
+ 			<div class="example1-page" style="display:none">
+ 				<p>Page 3</p>
+ 			</div>
+			<div class="pagination">
+			</div>
+ 		</div>
+ 	</div>
+  <div class="row">
+    <div class="span12" id="example2">
+      <h3>Example 2</h3>
+       <p>
+          Shows an example with goto references and hash goto references.
+      </p>
+      <div class="example2-page" id="example2-page-1">
+        <p>Page 1 <br /><a class="example2-goto" href="#example2-page-2">Go to 2</a></p>
+      </div>
+      <div class="example2-page" id="example2-page-2" style="display:none">
+        <p>Page 2 <br/><a class="example2-goto" href="#example2-page-1">Go to 1</a><br/><a class="example2-goto" href="#example2-page-3">Go to 3</a></p>
+      </div>
+      <div class="example2-page" id="example2-page-3" style="display:none">
+        <p>Page 3</p>
+      </div>
+      <div class="pagination">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span12" id="example3">
+      <h3>Example 3</h3>
+       <p>
+          Shows an example for an animation.
+      </p>
+      <div class="example3-page">
+        <p>Page 1</p>
+      </div>
+      <div class="example3-page" style="display:none">
+        <p>Page 2</p>
+      </div>
+      <div class="example3-page" style="display:none">
+        <p>Page 3</p>
+      </div>
+      <div class="pagination">
+      </div>
+    </div>
+  </div>
+</div>
+
+		
+  	</div>
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-pagination-plugin.js"></script>
+    <script src="js/general.js"></script>
+  </body>
+</html>

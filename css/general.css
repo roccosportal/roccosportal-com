@@ -1,0 +1,26 @@
+#about {
+	margin-bottom: 40px;
+}
+
+#about, #projects div.project-row .media-body,#stuff .stuff-row .media-body{
+	text-align: justify;
+}
+
+
+#activities ul.lifestream  {
+	margin-left: 0;
+	list-style: none;
+}
+
+#activities ul.lifestream li {
+	line-height: 1.2em;
+	padding: 5px 3px 5px 25px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#footer {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
