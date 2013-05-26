@@ -1,1 +1,2 @@
 #2.1.0 - Changed download link for pvik-boilerplate to a version 2.0.0
+#2.2.0 - Changed download link for pvik-boilerplate to a version 3.0.0
