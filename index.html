@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  	<meta charset="utf-8">
     <title>roccosportal.com</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/lifestream.css" rel="stylesheet" media="screen">
     <link href="css/general.css" rel="stylesheet" media="screen">
   </head>
@@ -12,147 +14,141 @@
      <div class="container">
      	<div class="page-header">
 		  <h1>roccosportal.com <small>coding, art and stuff</small><img class="pull-right" src="/img/roccosportal-logo-tiny.png" alt="" /></h1>
-
 		</div>
-     	<div class="row" id="about">
-     		<div class="span7">
-     			<h3>Hello you!</h3>
+		<div class="pull-right" id="contact">
+			<small>rocco@roccosportal.com</small>
+		</div>
+		<div class="row" id="about">
+     		<div class="span8 offset2">
      			<p>
-     		 	Welcome to this little webpage. You can find some of my <a href="#projects">projects</a> I like to share with the community. Although I spend a lot of time programming web applications, codeart is not my only passion. Other interests and articles are located in the <a href="#stuff">stuff</a> section.
-     		 	Not everything is on this website, don't forget to check out my <a href="#activities">activities</a>.
+     		 		Nothing to see here. Scroll down.
      		 	</p>
      		 	<p>
-     		 		Announcement: Recently started a <a href="http://blog.roccosportal.com">blog</a> again.
+     		 		<small>You may want to follow <a href="blog.roccosportal.com">this link</a> to enter my blog.</small>
      		 	</p>
-     		 </div>
-     		 <div class="span4 offset1">
-					<h3>Contact</h3>
-					Do not hesitate to contact me or to tell me your thoughts about my projects and stuff. <em>E-Mail displayed as image for spam prevention.</em>
-					<img src="/img/email.png" alt="E-Mail" />
      		 </div>
      	</div>
     	<div class="row" id="projects">
-  		 		<div class="span12">
-  		 			<h3>Projects</h3>
-  		 			<div class="row project-row">
-				    <div class="span6">
-				    	<div id="project-pvik" class="media">
-						  <a class="pull-left thumbnail" href="https://github.com/roccosportal/pvik">
-						    <img class="media-object" src="/img/thumbnails/projects/pvik.png" alt="image" />
-						  </a>
-						  <div class="media-body">
-						    <h4 class="media-heading">Pvik</h4>
-						    Pvik is just another php5 framework and is more an expirement and learning project than an attempt to create a serious framework in the row with other big frameworks like Symfony, ZendFramework and Fatfree. It follows the MVC concepts and provides a database abstraction layer which supports so far MySQL and MSSQL. Even Pvik is a one person project it has a <a href="https://github.com/roccosportal/pvik/wiki">wiki</a> to help you building websites with it. There is also a pvik  <a href="#project-pvik-boilerplate" class="go-to-project">boilerplate</a> available. The source code is located on <a href="https://github.com/roccosportal/pvik">Github</a>. Please feel free to contribute.
-						  </div>
-						</div>
+	 		<div class="span12">
+	 			<h3>Projects</h3>
+	 			<hr />
+	 			<div class="row project-row" id="project-pvik">
+	 				<div class="span3">
+						<a href="https://github.com/roccosportal/simpubly">
+							<img src="img/thumbnails/projects/simpubly.png" alt="image">
+						</a>
 					</div>
-				    <div class="span6">
-				    	<div class="media"  id="project-dashbird">
-						  <a class="pull-left thumbnail" href="https://github.com/roccosportal/dashbird">
-						    <img class="media-object" src="/img/thumbnails/projects/dashbird.png" alt="image" />
-						  </a>
-						  <div class="media-body">
-						    <h4 class="media-heading">Dashbird</h4>
-						    Dashbird is an attemp to mix a social network with a pinboard. In earlier stages it was just a pinboard created for my self on which I could left notes for myself. In this phase it already included some features like tagging and searching. More and more of my friends used this service and so it went from single user to multi user. Most of the functionalities are written in Javascript and <a href="#project-pvik">Pvik</a> is mostly used for saving the data to a MySQL backend.  The source code is located on <a href="https://github.com/roccosportal/dashbird">Github</a>.
-						  </div>
-						</div>
+				    <div class="span9">
+						<h4>simpubly</h4>
+						This is the scenario: You own a webspace where you only can execute php files. You can not install git or other publishing software. Still you want to be able to publish the newest version from your github project to your webspace without manually copy and paste the files. This php script allows you to &lsquo;publish&rsquo; your php/html/js project by calling an url. It has some basic features like making a backup and ignoring files. Have a <a href="https://github.com/roccosportal/simpubly">look</a>.
 					</div>
 				</div>
-				<div class="row project-row" style="display:none">
-				    <div class="span6">
-				    	<div class="media" id="project-pvik-boilerplate">
-						  <a class="pull-left thumbnail" href="https://github.com/roccosportal/pvik-boilerplate">
-						    <img class="media-object" src="/img/thumbnails/projects/pvik-boilerplate.png" alt="image" />
-						  </a>
-						  <div class="media-body">
-						    <h4 class="media-heading">Pvik-Boilerplate</h4>
-						    The boilerplate contains a setup of required folders and files for developing websites with <a href="#project-pvik" class="go-to-project">Pvik</a>. You can download it <a href="/files/pvik-boilerplate-latest.tar.gz">here</a>. The source code is located on <a href="https://github.com/roccosportal/pvik-boilerplate">Github</a>.
-						  </div>
-						</div>
+	 			<div class="row project-row" id="project-pvik">
+	 				<div class="span3">
+						<a href="https://github.com/roccosportal/less-watchr">
+							<img src="img/thumbnails/projects/less-watchr.png" alt="image">
+						</a>
 					</div>
-				    <div class="span6">
-				    	<div class="media"  id="project-pvik-admin-tools">
-						  <a class="pull-left thumbnail" href="https://github.com/roccosportal/pvik-admin-tools">
-						    <img class="media-object" src="/img/thumbnails/projects/pvik-admin-tools.png" alt="image" />
-						  </a>
-						  <div class="media-body">
-						    <h4 class="media-heading">Pvik-Admin-Tools</h4>
-						   	If you have specifiy a model in <a href="#project-pvik" class="go-to-project">Pvik</a> you already have specified which table, columns and relations exists. PvikAdminTools uses this information to build a simple admin backend on top of it. How you set up the tool is described in the <a href="https://github.com/roccosportal/pvik-admin-tools/wiki">wiki</a>. The source code is located on <a href="https://github.com/roccosportal/pvik-admin-tools">Github</a>.
-						  </div>
-						</div>
+				    <div class="span9">
+						<h4>less-watchr</h4>
+						The <a href="http://lesscss.org/">less</a> npm package does not come with a file watcher that can recompile less files on a file change event. <a href="https://github.com/roccosportal/less-watchr">This</a> node package closes the gap. It is an easy to use command line tool and comes with a lot of customization features. For example it allows you to recompile multiple less files when one file was changed. This <a href="https://github.com/roccosportal/less-watchr#example-5">feature</a> was necessary in one of my bigger projects where we had seperated less folders that had to be recombiled when a global less file was changed.
 					</div>
 				</div>
-				<div class="row">
-					<div class="pagination  pagination-centered">
+	 			<div class="row project-row" id="project-pvik">
+	 				<div class="span3">
+						<a href="https://github.com/roccosportal/pvik">
+							<img src="img/thumbnails/projects/pvik.png" alt="image">
+						</a>
+					</div>
+				    <div class="span9">
+						<h4>Pvik</h4>
+						Pvik is just another php5 framework and is more an expirement and learning project than an attempt to create a serious framework in the row with other big frameworks like Symfony, ZendFramework and Fatfree. It follows the MVC concepts and provides a database abstraction layer which supports so far MySQL and MSSQL. Even Pvik is a one person project it has a <a href="https://github.com/roccosportal/pvik/wiki">wiki</a> to help you building websites with it. A <a href="#project-pvik-boilerplate" class="go-to-project">boilerplate</a> is available, you can start boiling <a href="http://roccosportal.com/files/pvik-boilerplate-latest.tar.gz">here</a>. The source code is located on <a href="https://github.com/roccosportal/pvik">Github</a>. Please feel free to contribute.
 					</div>
 				</div>
-  		 		</div>
-  		 		
+	 		</div>
 		</div>
 		<div class="row" id="stuff">
 			<div class="span12">
   		 		<h3>Stuff</h3>
+				<hr />
   		 		<div class="row stuff-row">
-				    <div class="span12">
-				    	<div class="media" id="stuff-ingress-logo-canvas">
-						  <a class="pull-left thumbnail" href="http:\/\/vimeo.com\/68863699">
-						    <img class="media-object" src="http:\\b.vimeocdn.com/ts/441/370/441370347_100.jpg" alt="image">
-						  </a>
-						  <div class="media-body">
-						    <h4 class="media-heading">Gource visualization of two projects</h4>
-						    I recently saw some software version control visualization from some bigger projects and liked this way of showing the progress a project made. <a href="https://code.google.com/p/gource/">Gource</a> is such a software version control visualization tool and probably the most known in this area. After spending the whole day to install new packets, configurate my system and rerendering the video quite often, this is the output: <a href="https://vimeo.com/68863699">gource visualization of roccosportal/dashbird</a> and <a href="https://vimeo.com/68863700">gource visualization of roccosportal/pvik</a>. Since I'm the only contributor it looks just half amazing than <a href="https://code.google.com/p/gource/wiki/Videos#Examples">these</a> videos. But is was a hell of a lot fun!
-						  </div>
-						</div>
+					<div class="span3">
+						<a href="#">
+							<img src="img/thumbnails/stuff/gource.png" alt="image">
+						</a>
+					</div>
+				    <div class="span9">
+					    <h4>Gource visualization of two projects</h4>
+					    I recently saw some software version control visualization 
+						from some bigger projects and liked this way of showing the progress a 
+						project made. <a href="https://code.google.com/p/gource/">Gource</a> is 
+						such a software version control visualization tool and probably the most
+						 known in this area. After spending the whole day to install new 
+						packets, configurate my system and rerendering the video quite often, 
+						this is the output: <a href="https://vimeo.com/68863699">gource visualization of roccosportal/dashbird</a> and <a href="https://vimeo.com/68863700">gource visualization of roccosportal/pvik</a>. Since I'm the only contributor it looks just half amazing than <a href="https://code.google.com/p/gource/wiki/Videos#Examples">these</a> videos. But is was a hell of a lot fun!
 					</div>
 				</div>
-  		 		<div class="row stuff-row" style="display:none">
-				    <div class="span12">
-				    	<div class="media" id="stuff-ingress-logo-canvas">
-						  <a class="pull-left thumbnail" href="/demo/ingress-logo-canvas/index.html">
-						    <img class="media-object" src="/img/thumbnails/stuff/ingress-logo-canvas.png" alt="image">
-						  </a>
-						  <div class="media-body">
-						    <h4 class="media-heading">Interactive Ingress Logo</h4>
-						    The best way to get an invite code for the <a href="http://www.ingress.com/">Ingress</a> beta is to show some impressive art with the logo of the google game. My idea was a interactive logo like the one from <a href="http://www.youtube.com/watch?v=TdtWLVLKFxI">Lionhead Studios</a>. Have a look at the <a href="/demo/ingress-logo-canvas/index.html">demonstration</a> (for best experience open in chrome). It's build with html5 Canvas and javascript. Over 1000 balls are displayed. The source code is located on <a href="https://github.com/roccosportal/ingress-logo-canvas">Github</a>.
-						  </div>
-						</div>
+  		 		<div class="row stuff-row"  id="stuff-ingress-logo-canvas">
+					<div class="span3">
+						<a href="#">
+							<img src="img/thumbnails/stuff/ingress-logo-canvas.png" alt="image">
+						</a>
+					</div>
+				    <div class="span9">
+					    <h4>Interactive Ingress Logo</h4>
+					    The best way to get an invite code for the <a href="http://www.ingress.com/">Ingress</a> beta is to show some impressive art with the logo of the google game. My idea was a interactive logo like the one from <a href="http://www.youtube.com/watch?v=TdtWLVLKFxI">Lionhead Studios</a>. Have a look at the <a href="http://roccosportal.com/demo/ingress-logo-canvas/index.html">demonstration</a>
+						(for best experience open in chrome). It's build with html5 Canvas and 
+						javascript. Over 1000 balls are displayed. The source code is located on
+						<a href="https://github.com/roccosportal/ingress-logo-canvas">Github</a>.
 					</div>
 				</div>
-				<div class="row">
-					<div class="pagination  pagination-centered">
-					</div>
-				</div>
-				</div>
+			</div>
 		</div>
 		<div class="row" id="activities">
 			<div class="span12">
 				<h3>Activities</h3>
-				<div class="row">
-					<div class="span6">
-						 <h4>Github</h4>
-						 <div  id="lifestream-github"><img src="/img/ajax-loader.gif" alt="loading"/></div>
+				<hr />
+				<div class="row activities-row">
+					<div class="span3">
+						<a href="https://github.com/roccosportal/">
+							<img src="img/thumbnails/activities/github.png" alt="image">
+						</a>
 					</div>
-					<div class="span6">
+					<div class="span9">
+						<h4>Github</h4>
+						<div  id="lifestream-github"><img src="/img/ajax-loader.gif" alt="loading"/></div>
+					</div>
+				</div>
+				<div class="row activities-row">
+					<div class="span3">
+						<a href="http://stackoverflow.com/users/1307375/roccosportal-com">
+							<img src="img/thumbnails/activities/stackoverflow.png" alt="image">
+						</a>
+					</div>
+					<div class="span9">
 						<h4>stackoverflow</h4>
 						<div  id="lifestream-stackoverflow"><img src="/img/ajax-loader.gif" alt="loading"/></div>
 					</div>
 				</div>
-				</div>
+			</div>
 		</div>
 		<div class="row" id="footer">
-			<div class="span5 offset7">
-				<p>
-				  <small>You are looking at <a href="https://github.com/roccosportal/roccosportal-com/">roccosportal.com</a> at version <a href="http://semver.org/">2.5.0</a>. Build with <a href="http://twitter.github.com/bootstrap/">bootstrap</a>, <a href="http://jquery.com/">jQuery 1.9.0</a> and  <a href="http://christianv.github.com/jquery-lifestream/">jQuery Lifestream</a>.
-				  </small>
-				</p>
+			<div class="span12">
+				<hr />
+				<div class="row">
+					<div class="span9 offset3">
+						<p>
+						  <small>You are looking at <a href="https://github.com/roccosportal/roccosportal-com/">roccosportal.com</a> at version <a href="http://semver.org/">3.0.0</a>. Build with <a href="http://twitter.github.com/bootstrap/">bootstrap</a>, <a href="http://jquery.com/">jQuery 1.9.0</a> and  <a href="http://christianv.github.com/jquery-lifestream/">jQuery Lifestream</a>.
+						  </small>
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		
   	</div>
     <script src="js/jquery-1.9.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.lifestream.min.js"></script>
-    <script src="js/bootstrap-pagination-plugin.js"></script>
     <script src="js/general.js"></script>
   </body>
 </html>

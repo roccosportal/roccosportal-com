@@ -1,6 +1,6 @@
  $(document).ready(function(){
    $("#lifestream-github").lifestream({
-      limit: 4,
+      limit: 8,
       list:[
         {
           service: "github",
@@ -9,7 +9,7 @@
       ]
   });
   $("#lifestream-stackoverflow").lifestream({
-      limit: 4,
+      limit: 8,
       list:[
         {
           service: "stackoverflow",
@@ -17,36 +17,5 @@
         }
       ]
   });
-
-
- 
-  var projectPagination = BootstrapPagination();
-  projectPagination.init({
-    $pagination : $('#projects .pagination'),
-    $pages : $('#projects .project-row'),
-    $gotoLinks : $('.go-to-project'),
-    hashStartsWith : '#project',
-    hideAndShow : function($hide, $show){
-      $hide.fadeOut(function(){
-         $show.fadeIn();
-      });
-     
-    }
-  });
-
-  var stuffPagination = BootstrapPagination();
-  stuffPagination.init({
-    $pagination : $('#stuff .pagination'),
-    $pages : $('#stuff .stuff-row'),
-    $gotoLinks : $('.go-to-stuff'),
-    hashStartsWith : '#stuff',
-    hideAndShow : function($hide, $show){
-      $hide.fadeOut(function(){
-         $show.fadeIn();
-      });
-     
-    }
-  });
-
 });
 

@@ -1,10 +1,40 @@
+body {
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	line-height: 26px;
+}
+
+hr {
+	margin-top: 10px;
+}
+
+.page-header {
+	margin-bottom: 0px; /* instead of 30px */
+}
+
+#contact {
+	color: #999999;
+}
+
 #about {
+	margin-top: 30px;
+	text-align: center;
+}
+
+
+#projects, #activities {
 	margin-bottom: 40px;
 }
 
-#about, #projects div.project-row .media-body,#stuff .stuff-row .media-body{
-	text-align: justify;
+
+#projects div.project-row, #stuff div.stuff-row, #activities div.activities-row {
+	margin-bottom: 24px;
 }
+
+#projects div.project-row img, #stuff div.stuff-row img, #activities div.activities-row img{
+	margin-top: 10px;
+}
+
 
 
 #activities ul.lifestream  {
@@ -13,7 +43,7 @@
 }
 
 #activities ul.lifestream li {
-	line-height: 1.2em;
+	/*line-height: 1.2em;*/
 	padding: 5px 3px 5px 25px;
 	background-repeat: no-repeat;
 	background-position: left center;
