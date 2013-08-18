@@ -4,6 +4,10 @@ body {
 	line-height: 26px;
 }
 
+p {
+	margin-bottom: 20px; /* font-size */
+}
+
 hr {
 	margin-top: 10px;
 }
@@ -19,6 +23,10 @@ hr {
 #about {
 	margin-top: 30px;
 	text-align: center;
+}
+
+#about p {
+	margin-bottom: 10px; /* from bootstrap */
 }
 
 
